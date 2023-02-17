@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>02GF300</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="https://raw.githubusercontent.com/Dcantillo904/Powerapps/main/02GF300.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="https://raw.githubusercontent.com/Dcantillo904/Powerapps/main/poster02GF300.webp" shadow-intensity="2" environment-image="bathroom_4k_v3.png" shadow-softness="1">
+      <button class="Hotspot" slot="hotspot-1" data-surface="0 0 717 718 719 0.153 0.731 0.116" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Manguera extraible</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-surface="0 2 6171 6172 6173 0.033 0.335 0.632" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Acero Inoxidable</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-surface="0 2 26835 26836 26837 0.190 0.384 0.425" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Peso:3.27 Kg
+              Dimensiones: 44x30.5x11cm</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-surface="0 2 25434 25435 25436 0.014 0.073 0.913" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Mando: Monomando</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          Ver en tu espacio
+      </button>
+      <div id="ar-prompt">
+          <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+      </div>
+    </model-viewer>  
+    <script src="https://github.com/Dcantillo904/Powerapps/blob/main/script02GF300.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
