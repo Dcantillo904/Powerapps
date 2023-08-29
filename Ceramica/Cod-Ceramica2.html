@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Ceramica 2</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="https://raw.githack.com/Dcantillo904/Powerapps/main/Ceramica/styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="https:///raw.githubusercontent.com/Dcantillo904/Powerapps/main/Ceramica/Ceramica2.glb" 
+    ar ar-modes="webxr scene-viewer quick-look" 
+    camera-controls touch-action="pan-y"
+    camera-controls poster="https:///raw.githubusercontent.com/Dcantillo904/Powerapps/main/Ceramica/Poster-Ceramica2.webp" shadow-intensity="1" 
+    environment-image="https://raw.githubusercontent.com/GrupoPacificoGP/RA/main/bathroom_4k_v3.png">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          Ver en tu espacio
+      </button>
+      <div id="ar-prompt">
+          <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+      </div>
+    </model-viewer>  
+    <script src="https://github.com/Dcantillo904/Powerapps/blob/main/Ceramica/Script-Ceramica2.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>
